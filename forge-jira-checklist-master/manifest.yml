@@ -1,0 +1,17 @@
+modules:
+  'jira:issuePanel':
+    - key: jira-checklist-hello-world-panel
+      function: main
+      title: Checklist
+      description: A simple checklist for Jira
+      icon: https://raw.githubusercontent.com/dpashkevich/forge-jira-checklist/master/src/images/checkbox.svg
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: 'ari:cloud:ecosystem::app/b0f49e2d-3bc1-4ab1-86f5-f667be9c5157'
+  name: Simple Checklists for Jira
+permissions:
+  scopes:
+    - 'read:jira-work'
+    - 'write:jira-work'
